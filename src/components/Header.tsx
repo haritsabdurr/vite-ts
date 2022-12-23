@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, Container } from '@chakra-ui/react';
+import { Box, Text, Container } from '@chakra-ui/react';
 
 export function Header() {
   return (
