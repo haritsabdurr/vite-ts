@@ -3,9 +3,8 @@ import { Box, Heading, Text, Container } from '@chakra-ui/react';
 
 export function Header() {
   return (
-    <>
+    <Box as='section' pb='112px'>
       <Box
-        as='section'
         color='#F7FAFC'
         bg='#6B46C1'
         pt='90px'
@@ -23,6 +22,6 @@ export function Header() {
           </Text>
         </Container>
       </Box>
-    </>
+    </Box>
   );
 }

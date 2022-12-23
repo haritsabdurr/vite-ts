@@ -26,10 +26,10 @@ export function Pricing() {
     <Box
       maxW='994px'
       margin='auto'
-      mt='-120px'
-      rounded='lg'
-      boxShadow='xl'
-      mb='170px'
+      mt='-250px'
+      boxShadow='lg'
+      borderRadius='10px'
+      overflow='hidden'
     >
       <Flex>
         <Box textAlign='center' bg='#F0EAFB' p='60px'>

@@ -10,8 +10,6 @@ function App() {
     <div className='App'>
       <Header />
       <Pricing />
-      <Pricing />
-      <Pricing />
     </div>
   );
 }
