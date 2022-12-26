@@ -7,7 +7,7 @@ export function Header() {
       <Box
         color='#F7FAFC'
         bg='#6B46C1'
-        pt='90px'
+        pt='80px'
         pb='198px'
         px='32px'
         textAlign='center'
