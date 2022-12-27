@@ -5,60 +5,155 @@ import {
   Icon,
   Text,
   Button,
-  Stack,
+  VStack,
   HStack,
   StackProps,
+  Container,
 } from '@chakra-ui/react';
-import { CheckIcon } from '../assets/icons';
-
-export const ListItem = (props: StackProps) => {
-  const { children, ...rest } = props;
-  return (
-    <HStack as='li' spacing='20px' {...rest}>
-      <Icon as={CheckIcon} h='22px' w='22px' />
-      <Text>{children}</Text>
-    </HStack>
-  );
-};
 
 export function Pricing() {
   return (
-    <Box
-      maxW='994px'
-      margin='auto'
-      mt='-250px'
-      boxShadow='lg'
-      borderRadius='10px'
-      overflow='hidden'
-    >
-      <Flex>
-        <Box textAlign='center' bg='#F0EAFB' p='60px'>
-          <Text fontWeight='800' fontSize='24px'>
-            Premiun PRO
+    <Box bg='#F4F7FF' pt='70px' pb='70px'>
+      <Container maxWidth='container.lg' centerContent>
+        <Box px='176px' textAlign='center'>
+          <Text fontSize='20px' fontWeight='600' color='#3056D3'>
+            Pricing Table
           </Text>
-          <Text fontWeight='800' fontSize='60px' mt='16px'>
-            $329
+          <Text fontSize='36px' fontWeight='700'>
+            Reasonable Pricing Plan
           </Text>
-          <Text fontWeight='500' fontSize='18px' mt='8px '>
-            billed annually
+          <Text fontSize='16px' fontWeight='400' mt='12px'>
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in some form.
           </Text>
-          <Button colorScheme='purple' size='lg' w='282px' mt='24px '>
-            Get Started
-          </Button>
         </Box>
-        <Box fontSize='18px' p='60px' bg='white'>
-          <Text>
-            Access these features when you get this pricing package for your
-            business.
-          </Text>
-          <Stack as='ul' spacing='20px' pt='24px'>
-            <ListItem>International calling and messaging API</ListItem>
-            <ListItem>Additional phone numbers</ListItem>
-            <ListItem>Automated messages via Zipper</ListItem>
-            <ListItem>24/7 support and consultation</ListItem>
-          </Stack>
-        </Box>
-      </Flex>
+        <Flex gap='36px' mt='36px'>
+          <Box textAlign='center' bg='white' p='70px'>
+            <Text fontWeight='500' fontSize='20px'>
+              Starter
+            </Text>
+
+            <HStack>
+              <Text fontWeight='600' fontSize='42px' mt='16px'>
+                $25
+              </Text>
+              <Text fontWeight='400' fontSize='15px' pt='36px'>
+                /month
+              </Text>
+            </HStack>
+            <Text fontWeight='500' fontSize='18px' my='8px'>
+              Features
+            </Text>
+            <VStack>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Up to 1 User
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                All UI Components
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Lifetime Access
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Free Updates
+              </Text>
+            </VStack>
+            <Button
+              bg='#3056D3'
+              color='white'
+              size='md'
+              mt='32px'
+              fontWeight='500'
+              fontSize='16px'
+            >
+              Purchase Now
+            </Button>
+          </Box>
+          <Box textAlign='center' bg='white' p='70px'>
+            <Text fontWeight='500' fontSize='20px'>
+              Basic
+            </Text>
+
+            <HStack>
+              <Text fontWeight='600' fontSize='42px' mt='16px'>
+                $59
+              </Text>
+              <Text fontWeight='400' fontSize='15px' pt='36px'>
+                /month
+              </Text>
+            </HStack>
+            <Text fontWeight='500' fontSize='18px' my='8px'>
+              Features
+            </Text>
+            <VStack>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Up to 5 User
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                All UI Components
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Lifetime Access
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Free Updates
+              </Text>
+            </VStack>
+            <Button
+              bg='#3056D3'
+              color='white'
+              size='md'
+              mt='32px'
+              fontWeight='500'
+              fontSize='16px'
+            >
+              Purchase Now
+            </Button>
+          </Box>
+          <Box textAlign='center' bg='white' p='70px'>
+            <Text fontWeight='500' fontSize='20px'>
+              Premium
+            </Text>
+
+            <HStack>
+              <Text fontWeight='600' fontSize='42px' mt='16px'>
+                $99
+              </Text>
+              <Text fontWeight='400' fontSize='15px' pt='36px'>
+                /month
+              </Text>
+            </HStack>
+
+            <Text fontWeight='500' fontSize='18px' my='8px'>
+              Features
+            </Text>
+            <VStack>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Unlimited User
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                All UI Components
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Lifetime Access
+              </Text>
+              <Text fontWeight='400' fontSize='16px' color='#637381'>
+                Free Updates
+              </Text>
+            </VStack>
+            <Button
+              bg='#3056D3'
+              color='white'
+              size='md'
+              mt='32px'
+              fontWeight='500'
+              fontSize='16px'
+            >
+              Purchase Now
+            </Button>
+          </Box>
+        </Flex>
+      </Container>
     </Box>
   );
 }
