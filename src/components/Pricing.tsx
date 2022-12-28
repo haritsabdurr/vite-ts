@@ -2,12 +2,10 @@ import React from 'react';
 import {
   Box,
   Flex,
-  Icon,
   Text,
   Button,
   VStack,
   HStack,
-  StackProps,
   Container,
 } from '@chakra-ui/react';
 
@@ -27,8 +25,8 @@ export function Pricing() {
             the majority have suffered alteration in some form.
           </Text>
         </Box>
-        <Flex gap='36px' mt='36px'>
-          <Box textAlign='center' bg='white' p='70px'>
+        <Flex gap='60px' mt='36px'>
+          <Box textAlign='center' bg='white' p='72px'>
             <Text fontWeight='500' fontSize='20px'>
               Starter
             </Text>
@@ -69,7 +67,7 @@ export function Pricing() {
               Purchase Now
             </Button>
           </Box>
-          <Box textAlign='center' bg='white' p='70px'>
+          <Box textAlign='center' bg='white' p='72px'>
             <Text fontWeight='500' fontSize='20px'>
               Basic
             </Text>
@@ -110,7 +108,7 @@ export function Pricing() {
               Purchase Now
             </Button>
           </Box>
-          <Box textAlign='center' bg='white' p='70px'>
+          <Box textAlign='center' bg='white' p='72px'>
             <Text fontWeight='500' fontSize='20px'>
               Premium
             </Text>

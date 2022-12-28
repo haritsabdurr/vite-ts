@@ -52,7 +52,7 @@ export function Team() {
           majority have suffered alteration in some form.
         </Text>
       </Box>
-      <Flex gap='72px' mt='48px'>
+      <Flex gap='96px' mt='48px'>
         <PersonCard icons={Person1}>Adveen Desuza</PersonCard>
         <PersonCard icons={Person2}>Jezmin uniya</PersonCard>
         <PersonCard icons={Person3}>Andrieo Gloree</PersonCard>
