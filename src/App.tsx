@@ -9,6 +9,8 @@ import { CallAction } from './components/CallAction';
 import { Pricing } from './components/Pricing';
 import { Testimonial } from './components/Testimonial';
 import { Contact } from './components/Contact';
+import { Client } from './components/Client';
+import { Footer } from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +28,8 @@ function App() {
       <Testimonial />
       <Box bg='#E9F9FF' h='410px'></Box>
       <Contact />
+      <Client />
+      <Footer />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { Users1, Users2, Users3 } from '../assets/user';
 
 export function Testimonial() {
   return (
-    <Container maxWidth='container.lg' py='70px'>
+    <Container maxWidth='container.lg' pt='70px' pb='80px'>
       <Box px='176px' textAlign='center'>
         <Text fontSize='20px' fontWeight='600' color='#3056D3'>
           Testimonials
